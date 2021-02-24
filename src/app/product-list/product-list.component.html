@@ -17,9 +17,11 @@
     rating: {{product.rating}}
   </p>
 
-  <button (click)="share()">
-    Share
-  </button>
+  <a [href]='"https://telegram.me/share/url?url=" + product.link ' target="_blank">
+    <button>
+      Share 
+    </button>
+  </a>
 
   <app-product-alerts
     [product]="product" 
